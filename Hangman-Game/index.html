@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TACOS</title>
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link href="https://fonts.googleapis.com/css?family=Khula:400,800" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="content">
+                <header>
+                    <div class="heading">
+                        <div class="title">
+                            <div class="box">
+                                <h1 class="primary"> TACOS </h1>
+                                <h1 class="secondary">Hangman</h1>
+                                    <img class="gif" src="https://media.giphy.com/media/fVAerA7bPKXRu/giphy.gif" alt="Loading" title="Loading">
+                        
+                                <button class="start" onclick="startGame();" type="text">Start Game</button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+        
+                <main>
+                    <div class="col-right">
+                        <div class="game-box">
+                            <h3>Current Word</h3>
+                            <h2><span id="word">_</span></h2>
+                    
+                            <h4>Guesses Remaining: <span id="remainingGuesses">0</span></h4>
+                            <h4>Letters Guessed: <span id="letterGuesses"></span></h4>
+                            <audio id="winAudio">
+                                <source src="assets/media/" type="audio/wav">
+                            </audio>
+                            <audio id="loseAudio">
+                                <source src="assets/media/" type="audio/wav">
+                            </audio>
+                        </div>
+                    </div>
+
+                    <div class="col-left">
+                        <div class="stat-box">
+                            <h4>Wins: <span id="wins">0</span></h4>
+                            <h4>Losses: <span id="losses">0</span></h4>
+                        </div>  
+                        <div class="image-box">
+                            <img id="image" src="../../assets/images/tacos.jpg" width="200px" height="200px">
+                        </div>
+                    </div>
+                </main>
+        
+                <footer>
+                    &copy; Copyright 2017 Karime Chimal
+                </footer>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+    </body>
+</html>

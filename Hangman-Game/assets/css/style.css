@@ -1,0 +1,205 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	color: #fff;
+}
+.gif {
+	width: 100px;
+	height: 100px;
+	margin-left: 130px;
+}
+
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1200px
+}
+.content {
+	padding-top: 30px;
+	background-color: #333;
+}
+.heading {
+	width: 100%;
+	height: 300px;
+	background-image: url("../../assets/images/tacos.jpg");
+	background-position: left center;
+	background-size: 120% auto;
+}
+.title {
+	float: left;
+	margin-top: 70px;
+	margin-left: 10%;
+}
+.primary {
+	font-family: 'Khula', sans-serif;
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 40px;
+	border-bottom: 2px solid #fff;
+	text-align: center;
+}
+.secondary {
+	font-family: 'Khula', sans-serif;
+	font-weight: 400;
+	font-size: 36px;
+	text-align: center;
+	padding-top: 5px;
+}
+.start {
+	width: 100%;
+	margin-top: 8px;
+	padding: 5px;
+	border: none;
+	border-radius: 3px;
+	font-size: 16px;
+	font-weight: 600;
+	background-color: #eee;
+}
+.start:hover {
+	background-color: #aaa;
+}
+.box {
+	background-color: #000;
+	opacity: 0.8;
+	padding: 21px 40px 20px;
+}
+main {
+	display: flex;
+	width: 80%;
+	margin: 30px auto 0;
+	background-image: url("../../assets/images/tacos.jpg");
+	background-color: #eee;
+	color: #000;
+	border-radius: 8px 8px 0 0;
+}
+.col-left {
+	flex: 1;
+	order: 1;
+	text-align: right;
+}
+.col-right {
+	flex: 1;
+	order: 2;
+}
+.stat-box {
+	display: inline-block;
+	width: 200px;
+	text-align: center;
+	padding-top: 30px;
+	margin-right: 10%;
+}
+.image-box {
+	display: block;
+	margin-top: 30px;
+	margin-right: 10%;
+	padding-left: 10px;
+	text-align: right;
+}
+.game-box {
+	display: inline-block;
+	text-align: center;
+	padding-top: 30px;
+	margin-left: 10%;
+}
+h2, h3, h4 {
+	padding: 10px;
+}
+h3 {
+	font-size: 18px;
+}
+h4 {
+	font-size: 16px;
+}
+footer {
+	text-align: center;
+	font-size: 14px;
+	padding: 12px 0;
+	background-color: #111;
+}
+/* sticky footer */
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+}
+.wrapper {
+	height: 100%;
+}
+.content {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+main {
+	flex: 1;
+}
+
+@media only screen and (max-width:640px) {
+	.content {
+		padding-top: 0;
+	}
+	main {
+		display: block;
+	}
+	.stat-box {
+		width: 100%;
+		margin: 10px 0 0;
+		padding-top: 0;
+	}
+	table {
+		margin: 0 auto;
+	}
+	.image-box {
+		width: 100%;
+		text-align: center;
+		margin: 10px 0;
+		padding-left: 0;
+	}
+	.game-box {
+		width: 100%;
+		padding-top: 10px;
+		margin-left: 0%;
+	}
+}
+
+@media only screen and (max-width:550px) {
+	.heading {
+		background-size: cover;
+	}
+	.title {
+		float: none;
+		width: 100%;
+		margin: 0;
+		padding-top: 70px;
+	}
+	.box {
+		width: 80%;
+		margin: 0 auto;
+	}
+	h1 {
+		text-align: center;
+	}
+	main {
+		width: 100%;
+		border-radius: 0;
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width:400px) {
+	.heading {
+		background-position: left top;
+		background-size: auto 120%;
+	}
+	.title {
+		float: none;
+		width: 100%;
+		margin: 0;
+		padding-top: 0;
+	}
+	.box {
+		width: 100%;
+	}
+}
